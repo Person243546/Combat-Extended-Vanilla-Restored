@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Charge lance ========== -->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>BaseHumanMakeableGun</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]</xpath>
+		<value>
+			<costList>
+				<Plasteel>60</Plasteel>
+				<ComponentSpacer>3</ComponentSpacer>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]</xpath>
+		<value>
+			<recipeMaker>
+				<researchPrerequisite>ChargedShot</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>9</Crafting>
+				</skillRequirements>
+				<recipeUsers Inherit="False">
+					<li>FabricationBench</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	  <xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]/tradeability</xpath>
+	  <value>
+		<tradeability>All</tradeability>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	  <xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]/destroyOnDrop</xpath>
+	  <value>
+		<destroyOnDrop>False</destroyOnDrop>
+	  </value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	  <xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]/menuHidden</xpath>
+	  <value>
+		<menuHidden>False</menuHidden>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]/weaponTags</xpath>
+		<value>
+			<li>SpacerGun</li>
+		</value>
+	</Operation>
+	
+	<!-- ========== Minigun ========== -->
+
+	<Operation Class="PatchOperationAttributeSet">
+		<xpath>/Defs/ThingDef[defName="Gun_Minigun"]</xpath>
+		<attribute>ParentName</attribute>
+		<value>BaseHumanMakeableGun</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Gun_Minigun"]</xpath>
+		<value>
+			<costList>
+				<Steel>160</Steel>
+				<ComponentIndustrial>20</ComponentIndustrial>
+			</costList>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Gun_Minigun"]</xpath>
+		<value>
+			<recipeMaker>
+				<researchPrerequisite>MultibarrelWeapons1</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>7</Crafting>
+				</skillRequirements>
+				<recipeUsers Inherit="False">
+					<li>FabricationBench</li>
+				</recipeUsers>
+			</recipeMaker>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Gun_Minigun"]/tradeability</xpath>
+		<value>
+			<tradeability>All</tradeability>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Gun_Minigun"]/destroyOnDrop</xpath>
+		<value>
+			<destroyOnDrop>False</destroyOnDrop>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+	<xpath>/Defs/ThingDef[defName="Gun_Minigun"]/menuHidden</xpath>
+		<value>
+			<menuHidden>False</menuHidden>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Gun_Minigun"]/statBases/Bulk</xpath>
+		<value>
+			<Bulk>27</Bulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Gun_Minigun"]/*/*/magazineSize</xpath>
+		<value>
+			<magazineSize>500</magazineSize>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Gun_Minigun"]/verbs/li[verbClass="CombatExtended.Verb_ShootCE"]/burstShotCount</xpath>
+		<value>
+			<burstShotCount>250</burstShotCount>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Gun_Minigun"]/description</xpath>
+		<value>
+			<description>A multi-barrel machine gun. It's unwieldy, but once it starts firing it fires very fast. Where most self-loading guns are powered by the energy from the gunpowder, the minigun uses an electric motor to rapidly cycle cartridges through the weapon. Requires superhuman abillity granted by bionic prostheses or powered armor to wield it.</description>
+		</value>
+	</Operation>
+  
+</Patch>

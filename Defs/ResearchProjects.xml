@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>MultibarrelWeapons1</defName>
+    <label>multibarrel weapons</label>
+    <description>Assemble miniguns.</description>
+    <baseCost>2600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>GasOperation</li>
+      <li>MicroelectronicsBasics</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>9</researchViewX>
+    <researchViewY>4.5</researchViewY>
+  </ResearchProjectDef>
+  
+
+  <ResearchProjectDef>
+    <defName>HeavyTurrets1</defName>
+    <label>autocannon turrets</label>
+    <description>Produce the heavy, long-ranged autocannon turret.</description>
+    <baseCost>1600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>CE_HeavyTurret</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+	<tab>CE_Turrets</tab>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+	<defName>SniperTurret1</defName>
+	<label>sniper turrets</label>
+	<description>Produce the armor-penetrating sniper turret. It fires large shells which tear through plasteel like paper, but it's less effective at close range.</description>
+	<baseCost>3000</baseCost>
+	<techLevel>Industrial</techLevel>
+	<prerequisites>
+	  <li>HeavyTurrets1</li>
+	</prerequisites>
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	<requiredResearchFacilities>
+	  <li>MultiAnalyzer</li>
+	</requiredResearchFacilities>
+	<researchViewX>4</researchViewX>
+	<researchViewY>1</researchViewY>
+	<tab>CE_Turrets</tab>
+  </ResearchProjectDef>
+    
+  
+	
+</Defs>

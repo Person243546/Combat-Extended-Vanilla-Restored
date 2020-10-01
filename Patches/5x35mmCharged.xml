@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- ========== Make 5x35 charged cells craftable ========== -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Ammo_5x35mmCharged"]</xpath>
+		<value>
+			<tradeTags>
+				<li>CE_AutoEnableTrade</li>
+				<li>CE_AutoEnableCrafting</li>
+			</tradeTags>
+		</value>
+	</Operation>
+  
+</Patch>

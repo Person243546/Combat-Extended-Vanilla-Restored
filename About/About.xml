@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Combat Extended - Vanilla Restored</name>
+  <author>Nickdos</author>
+  <supportedVersions>
+    <li>1.2</li>
+  </supportedVersions>
+  	<description>Combat Extended - Vanilla Restored\n\nAdds back vanilla Rimworld weapons and turrets that were removed in the Combat Extended mod and adapts them to CE mechanics.</description>
+</ModMetaData>
