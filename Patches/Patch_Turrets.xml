@@ -4,7 +4,9 @@
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>/Defs</xpath>
-		<value><ThingDef ParentName="TurretAutoBase">
+		<value>
+
+<ThingDef ParentName="TurretAutoBase">
     <defName>Turret_Autocannon</defName>
     <label>autocannon turret</label>
 	<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -46,6 +48,8 @@
     </costList>
     <building>
       <turretGunDef>Gun_AutocannonTurret</turretGunDef>
+      <turretTopDrawSize>2.7</turretTopDrawSize>
+      <turretTopOffset>(0, 0.05)</turretTopOffset>
     </building>
     <specialDisplayRadius>70</specialDisplayRadius>
     <comps>
@@ -152,6 +156,8 @@
     </costList>
     <building>
       <turretGunDef>Gun_TurretSniper</turretGunDef>
+      <turretTopDrawSize>2.7</turretTopDrawSize>
+      <turretTopOffset>(0, 0.05)</turretTopOffset>
     </building>
     <specialDisplayRadius>80</specialDisplayRadius>
     <comps>

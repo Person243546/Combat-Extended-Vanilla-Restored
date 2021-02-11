@@ -5,5 +5,6 @@
   <supportedVersions>
     <li>1.2</li>
   </supportedVersions>
+  <packageId>nickdos.cevr</packageId>
   	<description>Combat Extended - Vanilla Restored\n\nAdds back vanilla Rimworld weapons and turrets that were removed in the Combat Extended mod and adapts them to CE mechanics.</description>
 </ModMetaData>
